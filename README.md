@@ -20,7 +20,7 @@ CUDA_VISIBLE_DEVICES=0 python code/main.py --filename_to_save 'my_network' --see
 ```
 To apply pruning strategies, use appropriate arguments with your specific paths: 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python code/main.py --resume --resume_filepath './checkpoint/cifar100/my_network_lastepoch.t7' --filename_to_save "seed31/pruned_model" --pruning_method 'block' --block_criterion 'max' --sparsity 0.8 --seed 31
+CUDA_VISIBLE_DEVICES=0 python code/main.py --resume --resume_filepath './checkpoint/cifar100/my_network_lastepoch.t7' --filename_to_save "pruned_model" --pruning_method 'block' --block_criterion 'max' --sparsity 0.8 --seed 31
 ```
 (To see what other arguments are allowed, you can check the function ```parse_arguments()``` in ```main.py``` script)
 

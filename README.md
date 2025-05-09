@@ -10,7 +10,7 @@ The code builds upon the work https://github.com/meliketoy/wide-resnet.pytorch.
 
 Example:
 ```bash
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 ```
 
 ## How to run

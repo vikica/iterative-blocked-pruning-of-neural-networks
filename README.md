@@ -14,13 +14,13 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 ```
 
 ## How to run
-After you have cloned the repository, you can train the network running the command below.
+After you have cloned the repository, you can train the 28x10 Wide Residual Network network running the command below:
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --filename_to_save 'my_network' --seed 31 
+CUDA_VISIBLE_DEVICES=0 python code/main.py --filename_to_save 'my_network' --seed 31 
 ```
 To apply pruning strategies, use appropriate arguments with your specific paths: 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --resume --resume_filepath './checkpoint/cifar100/seed31/my_network_lastepoch.t7' --filename_to_save "seed31/pruned_model" --pruning_method 'block' --block_criterion 'max' --sparsity 0.8 --seed 31
+CUDA_VISIBLE_DEVICES=0 python code/main.py --resume --resume_filepath './checkpoint/cifar100/seed31/my_network_lastepoch.t7' --filename_to_save "seed31/pruned_model" --pruning_method 'block' --block_criterion 'max' --sparsity 0.8 --seed 31
 ```
 (To see what other arguments are allowed, you can check the function ```parse_arguments()``` in ```main.py``` script)
 

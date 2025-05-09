@@ -32,3 +32,6 @@ and
 ```bash
 python main_part/unittests/tests_custom_pruning.py
 ```
+
+## Results
+Logs and summary of results are included. One example of a well-performing trained 90% block-sparse model is stored under https://drive.google.com/drive/folders/1DXBIJpRNS6-2A5fva-whxalrU5c_5Oi5?usp=drive_link.

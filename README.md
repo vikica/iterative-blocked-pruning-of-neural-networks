@@ -3,6 +3,9 @@ My diploma thesis on Iterative blocked pruning of neural networks.
 
 The code builds upon the work https://github.com/meliketoy/wide-resnet.pytorch.
 
+![Generate an illustrative picture of block pruning of matrices](https://github.com/user-attachments/assets/4b23d9d0-1e4b-4867-af5d-0c7069c114bb)
+(A very insightful illustration by ChatGPT, prompt: Generate an illustrative picture of block pruning of matrices)
+
 ## Requirements
 - Install appropriate [cuda](https://pytorch.org/get-started/locally/) version
 - Download [Pytorch](https://pytorch.org)
